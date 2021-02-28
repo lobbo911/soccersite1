@@ -1,162 +1,166 @@
-/*
- * Globals
- */
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff; }
+img {
+  max-width: 100%; }
 
-/* Custom default button */
-.btn-default {
-  color: #fff;
-  text-shadow: none;
-  /* Prevent inheritence from `body` */
-  background-color: transparent;
-  border: 2px solid #fff;
-  border-radius: 20px;
-  padding: 0.5rem 2rem; }
+.site-header {
+  position: relative; }
 
-.btn-default:hover,
-.btn-default:focus {
-  background-color: rgba(255, 255, 255, 0.3); }
+.site-header .mdl-layout__header-row {
+  padding: 0;
+  justify-content: center; }
 
-/*
- * Base structure
- */
-html,
-body {
-  height: 100%; }
-
-body {
-  background: url(../img/cover.jpg) no-repeat center center fixed;
-  background-size: cover;
-  color: #fff;
+.site-description {
+  display: block;
+  font-size: 14px;
   text-align: center;
-  font-family: 'Quicksand', sans-serif; }
-
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-  display: table;
-  width: 100%;
-  height: 100%;
-  /* For at least Firefox */
-  min-height: 100%;
-  background: rgba(48, 53, 70, 0.5);
-  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5); }
-
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top; }
-
-.cover-container {
-  margin-right: auto;
-  margin-left: auto; }
-
-/* Padding for spacing */
-.inner {
-  padding: 30px; }
-
-/*
- * Header
- */
-.masthead-brand {
-  margin-top: 10px;
+  font-weight: 400;
   margin-bottom: 10px; }
 
-.nav-masthead {
-  text-align: center;
-  display: block; }
+.is-compact .mdl-layout__title span {
+  display: none; }
 
-.nav-masthead .nav-link {
-  display: inline-block; }
+.site-logo-row {
+  min-height: 200px; }
 
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left; }
-  .nav-masthead {
-    float: right; } }
+.is-compact .site-logo-row {
+  min-height: auto; }
 
-/*
- * Cover
- */
-.cover {
-  padding: 0 20px; }
+.site-logo {
+  background: url(../img/site-logo.png) 50% no-repeat;
+  background-size: cover;
+  height: 120px;
+  width: 120px;
+  margin: 15px auto; }
 
-.cover .btn-notify {
-  padding: 10px 60px;
-  font-weight: 500;
+.is-compact .site-logo {
+  height: 50px;
+  width: 50px;
+  margin: 7px auto; }
+
+.site-navigation-row {
+  background-color: rgba(0, 0, 0, 0.08);
   text-transform: uppercase;
-  border-radius: 40px; }
+  height: 45px; }
+  .site-navigation-row .mdl-navigation {
+    text-align: center;
+    max-width: 900px;
+    width: 100%; }
+  .site-navigation-row .mdl-navigation__link {
+    flex: 1;
+    line-height: 42px;
+    color: #fff; }
+  .site-navigation-row .is-active {
+    position: relative;
+    font-weight: bold;
+    opacity: 1; }
+  .site-navigation-row .mdl-navigation__link:hover {
+    opacity: 1; }
 
-.cover-heading {
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 10px;
-  font-size: 2rem;
-  margin-bottom: 5rem; }
+.mdl-layout__header .mdl-layout__drawer-button {
+  color: #fff; }
 
-@media (min-width: 768px) {
-  .cover-heading {
-    font-size: 3.4rem;
-    letter-spacing: 15px; } }
+.mdl-layout__content {
+  background-color: #fefefe; }
 
-.cover-copy {
-  max-width: 500px;
-  margin: 0 auto 3rem; }
+.site-content {
+  margin: 1em auto;
+  min-height: 580px; }
 
-/*
- * Footer
- */
-.mastfoot {
-  color: #999;
-  /* IE8 proofing */
-  color: rgba(255, 255, 255, 0.5); }
+.page-content {
+  padding-bottom: 2em; }
 
-/*
- * Subscribe modal box
- */
-#subscribeModal .modal-content {
-  background-color: #303546;
+.site-max-width {
+  max-width: 900px;
+  margin: auto; }
+
+.site-copy {
+  max-width: 700px; }
+
+.welcome-card > .mdl-card__title {
   color: #fff;
-  text-align: left; }
+  height: 290px;
+  background: url("../img/cover.jpg") center/cover; }
 
-#subscribeModal .modal-header, #subscribeModal .modal-footer {
-  border: 0; }
+.event-card {
+  background: #3E4EB8; }
+  .event-card .mdl-card__actions {
+    border-color: rgba(255, 255, 255, 0.2); }
+  .event-card .mdl-card__title {
+    align-items: flex-start; }
+  .event-card .mdl-card__title > h4 {
+    margin-top: 0; }
+  .event-card .mdl-card__actions {
+    display: flex;
+    box-sizing: border-box;
+    align-items: center; }
+  .event-card .mdl-card__actions > .material-icons {
+    padding-right: 10px; }
+  .event-card .mdl-card__title,
+  .event-card .mdl-card__actions,
+  .event-card .mdl-card__actions > .mdl-button {
+    color: #fff; }
 
-#subscribeModal .close {
-  color: #fff; }
+.section__play-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px; }
+  .section__play-btn .material-icons {
+    font-size: 3rem; }
 
-#subscribeModal .form-control {
-  margin-top: 1rem;
-  background: rgba(0, 0, 0, 0.4);
-  color: #fff; }
-  #subscribeModal .form-control:focus {
-    border-color: #49506a; }
+.section--center {
+  margin: 0 auto 2rem; }
 
-/*
- * Affix and center
- */
-@media (min-width: 768px) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0; }
-  .mastfoot {
-    position: fixed;
-    bottom: 0; }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle; }
-  /* Handle the widths */
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 100%;
-    /* Must be percentage or pixels for horizontal alignment */ } }
+.homepage-portfolio .mdl-button {
+  margin: 0 auto; }
 
-@media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 1060px; } }
+.homepage-footer {
+  background: #eee;
+  margin-bottom: -1em;
+  padding: 2rem 0; }
+
+.portfolio-card .mdl-card__title {
+  padding-bottom: 0; }
+
+img.article-image {
+  width: 100%;
+  height: auto; }
+
+.demo-card-image.mdl-card {
+  width: 192px;
+  height: 192px; }
+
+.person1 {
+  background: url("../img/person1.jpg") center/cover; }
+
+.person2 {
+  background: url("../img/person2.jpg") center/cover; }
+
+.demo-card-image > .mdl-card__actions {
+  height: 52px;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.3); }
+
+.demo-card-image__filename {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500; }
+
+.form-contact .mdl-textfield {
+  width: 100%; }
+
+#contact-button {
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 0;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  z-index: 900; }
+
+footer .mdl-logo a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px dotted #aaa; }
+
+.footer-container {
+  margin: 0 auto; }
